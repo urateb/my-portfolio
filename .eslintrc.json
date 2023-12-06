@@ -22,6 +22,8 @@
   },
   "rules": {
     "@typescript-eslint/explicit-function-return-type": "off",
+    "react/react-in-jsx-scope": "false",
+    "@typescript-eslint/consistent-type-definitions": "off",
     "prettier/prettier": "error"
   }
 }
