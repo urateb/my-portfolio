@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'eerie-black': '#191919',
+        'bright-grey': '#EDEDED',
+        'violet-blue': '#8083FF',
+        'american-blue': '#464362',
+        fuschia: '#FF00FF',
+      },
     },
   },
   plugins: [],

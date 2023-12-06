@@ -1,13 +1,13 @@
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Header from '@/Header'
 
 export default function Home() {
+  const navItems = [
+    { title: 'Home', url: '/' },
+    { title: 'About', url: '/about' },
+  ]
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-     <h1 className='text-green-400 font-bold'>jnsdjsn</h1>
+    <main className={`min-h-screen bg-eerie-black text-bright-grey`}>
+      <Header navItems={navItems} />
     </main>
   )
 }
