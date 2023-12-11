@@ -1,3 +1,4 @@
+import About from '@/About'
 import Header from '@/Header'
 import Hero from '@/Hero'
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <div className="flex min-h-[calc(100vh_-_72px)] flex-col justify-center">
         <Hero />
       </div>
+      <About />
     </main>
   )
 }

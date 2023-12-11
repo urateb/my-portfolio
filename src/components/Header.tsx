@@ -16,17 +16,32 @@ interface NavItem {
 function Header(props: Props) {
   return (
     <div className="py-6 flex items-center justify-between">
-      <Image src={signature} alt="signature" width={60} />
+      <a href="/">
+        <Image src={signature} alt="signature" width={60} />
+      </a>
       <div className="flex self-end gap-x-6 items-center">
         {props.navItems.map((item) => {
           return (
-            <a key={item.url} href={item.url}>
+            <a key={item.url} href={item.url} className="hover:text-white">
               {item.title}
             </a>
           )
         })}
-        <Image src={github} alt="github" width={20} />
-        <Image src={linkedin} alt="linkedin" width={20} className="-ml-2" />
+        <a href="https://github.com/urateb/">
+          <Image
+            src={github}
+            alt="github"
+            width={20}
+            className="hover:scale-125 transform transition-transform duration-300 ease-in-out"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/urate-bekaj/">
+          <Image
+            src={linkedin}
+            alt="linkedin"
+            className="-ml-2 hover:scale-125 transform transition-transform duration-300 ease-in-out"
+          />
+        </a>
       </div>
     </div>
   )
