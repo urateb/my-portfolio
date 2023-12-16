@@ -6,6 +6,7 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -13,6 +14,7 @@ const config: Config = {
         'bright-grey': '#EDEDED',
         'violet-blue': '#8083FF',
         'american-blue': '#464362',
+        'bright-orange': '#EE6800',
         fuschia: '#FF00FF',
       },
     },

@@ -1,10 +1,9 @@
-import React from 'react'
-
-interface Props {}
-
-function About(props: Props) {
+function About() {
   return (
-    <div className="p-12 flex items-center justify-center bg-violet-blue text-center text-3xl">
+    <div
+      id="about"
+      className="p-12 flex items-center justify-center bg-violet-blue text-center text-3xl"
+    >
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro tempore
       facilis repellat deserunt id? Et, vel. Soluta, et sapiente? Odit
       perferendis totam quaerat iure, nisi mollitia culpa magni assumenda
